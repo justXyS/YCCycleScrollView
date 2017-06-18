@@ -9,7 +9,7 @@
 import UIKit
 import Kingfisher
 
-public final class ImageScroller: UIView {
+public final class CycleScrollView: UIView {
     
     public enum ViewType {
         case image(imageUrls: [String],placeholder: UIImage?)
@@ -238,7 +238,7 @@ public final class ImageScroller: UIView {
 
 }
 
-extension ImageScroller: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
+extension CycleScrollView: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
     
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: self.frame.width, height: self.frame.height)

@@ -1,5 +1,11 @@
-# YCCycleScroolView
+# YCCycleScrollView
 即可用于图片轮播，又可用于需要支持手势切换的控制器和view，支持设置滚动方向
+
+#pod
+
+```
+pod YCCycleScrollView
+```
 
 # 使用示例
 ***
@@ -14,7 +20,7 @@ v3.view.backgroundColor = UIColor.blue
 let v1 = UIViewController()
 v1.view.backgroundColor = UIColor.yellow
         
-imageScroller.type = .customView(views:[v1.view,v2.view,v3.view])
+scroller.type = .customView(views:[v1.view,v2.view,v3.view])
 ```
 ```
 imageScroller.type = .image(imageUrls: [
