@@ -47,7 +47,7 @@ public final class CycleScrollView: UIView {
         }
     }
     
-    public typealias ScrollDirection = UICollectionViewScrollDirection
+    public typealias ScrollDirection = UICollectionView.ScrollDirection
     
     public var customLayout: UICollectionViewLayout? {
         didSet {
@@ -327,7 +327,7 @@ class ImageCell: UICollectionViewCell {
     }()
     
     private lazy var indicatorView: UIActivityIndicatorView = {
-        let view = UIActivityIndicatorView(activityIndicatorStyle: .gray)
+        let view = UIActivityIndicatorView(style: .gray)
         return view
     }()
     

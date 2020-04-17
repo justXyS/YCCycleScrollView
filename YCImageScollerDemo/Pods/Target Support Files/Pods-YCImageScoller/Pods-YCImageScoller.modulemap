@@ -1,0 +1,6 @@
+framework module Pods_YCImageScoller {
+  umbrella header "Pods-YCImageScoller-umbrella.h"
+
+  export *
+  module * { export * }
+}
